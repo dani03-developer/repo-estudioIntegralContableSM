@@ -1,19 +1,42 @@
 import Navbar from '../../layout/Navbar';
-import '../../../styles/Hero.css';
+import '../../../styles/Button.css';
+import { AvatarGroupDemo } from '../../ui/AvatarGroupDemo';
+import Button from '../../ui/button';
+import { BsCalendarEvent,  BsArrowRightSquareFill } from "react-icons/bs";
 const Hero = () => {
     return (
-        <div className='relative h-screen bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/0yTDnCCN/Group-56.png")]'>
+        <div className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/mrT3S9Jg/Group-56-(1).png")]'>
             <div className='absolute inset-0 bg-black/20 w-full h-full'></div>
             <Navbar />
-            <section className='grid grid-rows-2 w-full size-fit bg-white relative h-[calc(100vh-80px)]'>
-                <section className='flex justify-center items-center flex-col text-center gap-4 flex-2 bg-red-50'>
-                    <h1 className='font-inter font-bold'>ORDENÁ TUS NÚMEROS.<br />CRECE TRANQUILO.</h1>
-                    <p className='font-quicksand'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <section className='grid grid-rows-2 w-full h-fit relative  pb-[5vh] lg:gap-0 mt-[10vh] md:mt-[20vh] md:pb-[10vh] '>
+                <section className='flex  justify-center items-center flex-col text-center gap-7 sm:justify-start lg:text-start lg:items-start lg:pl-[2rem] lg:w-[40%]'>
+                    <h1 className='font-inter font-bold text-2xl sm:text-4xl xl:text-5xl'>ORDENÁ TUS NÚMEROS.<br />CRECE TRANQUILO.</h1>
+                    <p className='font-quicksand  px-[2rem] sm:px-[5rem] lg:px-[0rem] xl:text-xl'>Contabilidad clara, trato cercano y acompañamiento real.
+                        Porque detrás de cada número hay un proyecto, una familia y un esfuerzo que merece crecer con el respaldo correcto.</p>
+                    <AvatarGroupDemo className='pt-4'/>
                 </section>
-                <section className='grid grid-cols-2'>
-                    <section>2</section>
-                    <section>
-                        3
+                <section className='grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 h-fit gap-7 items-end sm:h-full'>
+                    <section className='flex justify-center align-items-center order-1 sm:order-2 '>
+                        <Button classNameBtn='flex flex-col p-4 w-[70%] px-6 bg-[#25476d] rounded-lg gap-4 justify-center lg:w-[50%] '>
+                            <div>
+                                <BsCalendarEvent className='text-2xl'/>
+                            </div>
+                            <div className='flex flex-row justify-between'>
+                                <div>
+                                    <p>30 min de sesión</p>
+                                    <p className='font-bold'>Reserva tu llamada</p>
+                                </div>
+                                <BsArrowRightSquareFill className='text-2xl sm:text-4xl' />
+                            </div>
+                        </Button>
+                    </section>
+                    <section className='flex flex-wrap h-fit align-center px-4 gap-2 order-2 sm:order-1'>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Pymes</Button>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Empresas Familiares</Button>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Monotributista</Button>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Responsable Inscripto</Button>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Sociedades</Button>
+                        <Button classNameBtn='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Servicio Personalizado</Button>
                     </section>
                 </section>
             </section>

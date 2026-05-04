@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0"
+      className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 font-quicksand lg:pt-4 "
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -34,7 +34,7 @@ export default function Navbar() {
               <img
                 alt="Your Company"
                 src="https://i.postimg.cc/HsBCbZd2/Group-29.png"
-                className="h-8"
+                className="h-8 lg:h-10"
               />
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
                   aria-current={item.current ? 'page' : undefined}
                   className={classNames(
                     item.current ? 'text-white' : 'text-gray-300 hover:bg-white/5 ',
-                    'rounded-md px-3 py-2 text-sm font-medium',
+                    'rounded-md px-3 py-2 text-sm font-medium lg:text-base',
                   )}
                 >
                   {item.name}
@@ -63,7 +63,7 @@ export default function Navbar() {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Ver Carrito</span>
-              <BsCart2 className='size-6'/>
+              <BsCart2 className='size-6 lg:size-8'/>
             </button>
           </div>
         </div>
