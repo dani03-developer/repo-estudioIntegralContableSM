@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden absolute w-full z-50">
         <div className="space-y-1 px-2 pt-2 pb-3 bg-[#1e1e1e]">
           {navigation.map((item) => (
             <DisclosureButton
