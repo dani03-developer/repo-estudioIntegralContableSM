@@ -1,0 +1,12 @@
+.dark-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #07070741;
+}
+
+.Header{
+    background: url('https://i.postimg.cc/0yTDnCCN/Group-56.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
