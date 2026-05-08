@@ -13,7 +13,7 @@ import {
 } from '@floating-ui/react';
 
 import { getStrictContext } from '@/lib/get-strict-context';
-import { Slot } from '@/components/animate-ui/primitives/animate/slot';
+import { Slot } from '@/lib/animate/slot';
 
 const [GlobalTooltipProvider, useGlobalTooltip] =
   getStrictContext('GlobalTooltipProvider');

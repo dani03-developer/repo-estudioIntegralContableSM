@@ -2,12 +2,12 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@/components/ui/avatar';
+} from '@/components/ui/Avatar';
 import {
   AvatarGroup,
   AvatarGroupTooltip,
   AvatarGroupTooltipArrow,
-} from '@/components/animate-ui/primitives/animate/avatar-group';
+} from '@/lib/animate/avatar-group';
 import { motion } from 'motion/react';
 
 const AVATARS = [

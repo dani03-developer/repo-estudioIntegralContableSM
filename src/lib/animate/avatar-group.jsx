@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { motion } from 'motion/react';
 
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent, TooltipArrow } from '@/components/animate-ui/primitives/animate/tooltip';
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent, TooltipArrow } from '@/lib/animate/tooltip';
 
 function AvatarContainer({
   zIndex,

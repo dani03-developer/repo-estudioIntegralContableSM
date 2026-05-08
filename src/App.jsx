@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import SmoothScroll from './components/animations/SmoothScroll';
 import Home from './components/pages/Home.jsx';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Home />
+      <SmoothScroll>
+        <Home />
+      </SmoothScroll>
     </>
   )
 }
