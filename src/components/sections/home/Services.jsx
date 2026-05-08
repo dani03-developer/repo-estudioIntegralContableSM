@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Reveal from "../../animations/Reveal";
 import Carousel from "../../mock/Carousel";
+import Card from '../../ui/Card';
+import ServicesList from '../../mock/ServicesList';
 const Services =()=>{
     return(
         <section className='flex flex-col justify-center items-center text-center p-3 gap-5 md:justify-start md:items-start xl:mx-15'> 
@@ -9,11 +11,27 @@ const Services =()=>{
                 <h2>Servicios</h2>
                 </div>
             </Reveal>
-            <div className='flex flex-col gap-3 justify-content items-center md:text-start md:justify-start md:aling-start'>
-                <h3 className='text-xl font-bold font-inter md:text-[2rem]'>Soluciones para lo que necesita tu negocio.</h3>
-                <p className='font-quicksand'>Resoluciones ágiles para trámites puntuales, diseñadas para quienes buscan eficiencia sin compromisos mensuales.</p>
+            <div className='flex flex-col gap-3 justify-content items-center md:text-start md:justify-start md:items-start'>
+                <Reveal>
+                    <h3 className='text-3xl font-bold font-inter md:text-[2rem]'>Soluciones para lo que necesita tu negocio.</h3>
+                </Reveal>
+                <Reveal>
+                     <p className='font-quicksand'>Resoluciones ágiles para trámites puntuales, diseñadas para quienes buscan eficiencia sin compromisos mensuales.</p>
+                </Reveal>
             </div>
-            <Carousel></Carousel>
+            <Carousel 
+               list={ServicesList}
+                renderCard={(service, index) => (
+                <Card
+                    key={index}
+                    icon={service.icon}
+                    title={service.nameService}
+                    description={service.description}
+                    className={index % 2 !== 0 ? 'bg-[#25476D] text-[#f7f4ee]' : 'bg-[#E5E2E2]'}
+                    classBtn={index % 2 !==0 ? 'bg-[#95B2C6]/58 text-[#f7f4ee] hover:bg-[#4A7C9E]':'bg-[#95B2C6]/58 text-[#25476D] hover:bg-[#25476D]'}
+                />
+                )}
+            />
             
         </section>
     );

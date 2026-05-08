@@ -4,6 +4,7 @@ import Hero from '../sections/home/Hero';
 import PainPoint from '../sections/home/PainPoint';
 import Benefits from '../sections/home/Benefits';
 import Services from '../sections/home/Services';
+import Pricing from '../sections/home/Pricing';
 const Home =()=>{
     return(
         <>
@@ -12,6 +13,7 @@ const Home =()=>{
             <PainPoint />
             <Benefits />
             <Services/>
+            <Pricing/>
         </Container>
         </>
     );

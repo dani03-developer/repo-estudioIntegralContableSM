@@ -7,7 +7,7 @@ const ServicesList =[
     },
     {
         icon: <MdComputer />,
-        nameService: 'Salto a PyME',
+        nameService: 'Salto a PyM',
         description: 'Transición guiada del Monotributo al Régimen General con total seguridad legal.'
     },
     {
