@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward,  IoIosArrowBack } from "react-icons/io";
 import { Button, buttonVariants } from "../ui/Button";
-const Carousel =( {renderCard, list} )=>{
+const Carousel =( {renderCard, list, md, lg, xl} )=>{
     const [actualScreen, setScreen ] = useState(1); //aquí viene la actualización
     const [actualCard, setCard] = useState(0);
     useEffect(()=>{
@@ -9,11 +9,11 @@ const Carousel =( {renderCard, list} )=>{
             if(window.innerWidth < 640){
                 setScreen(1);
             }else if(window.innerWidth<768){
-                setScreen(2);
+                setScreen(md);
             }else if(window.innerWidth<1024){
-                setScreen(3);
+                setScreen(lg);
             }else{
-                setScreen(4);
+                setScreen(xl);
             }
         }
         detectScreen(); //se ejecuta al inicio

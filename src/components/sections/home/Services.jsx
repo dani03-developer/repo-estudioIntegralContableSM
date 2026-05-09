@@ -21,6 +21,9 @@ const Services =()=>{
             </div>
             <Carousel 
                list={ServicesList}
+               md={2}
+               lg={3}
+               xl={4}
                 renderCard={(service, index) => (
                 <Card
                     key={index}

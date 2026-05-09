@@ -1,5 +1,6 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
-import Packages from '../../mock/Packages';
+import PackagesList from '../../mock/PackagesList';
+import Carousel from '../../mock/Carousel';
+import CardPackages from '../../ui/CardPackages';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -25,71 +26,25 @@ export default function Pricing() {
       <p className="mx-auto mt-6 max-w-2xl font-quicksand text-center text-lg font-medium text-gray-400 sm:text-xl/8">
         Transformá tu gestión contable en una ventaja estratégica con nuestro asesoramiento mensual proactivo, diseñado para anticipar cada uno de tus desafíos fiscales.
       </p>
-      <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
-        {Packages.map((packages, packagesIdx) => (
-          <div
-            key={packages.id}
-            className={classNames(
-              packages.featured ? 'relative bg-gray-800' : 'bg-white/2.5 sm:mx-8 lg:mx-0',
-              packages.featured
-                ? ''
-                : packagesIdx === 0
-                  ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
-                  : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
-              'rounded-3xl p-8 ring-1 ring-white/10 sm:p-10',
-            )}
-          >
-            <h3
-              id={packages.id}
-              className={classNames(packages.featured ? 'text-indigo-400' : 'text-indigo-400', 'text-base/7 font-semibold')}
-            >
-              {packages.name}
-            </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
-              <span
-                className={classNames(
-                  packages.featured ? 'text-white' : 'text-white',
-                  'text-5xl font-semibold tracking-tight',
+      <div className="mx-auto mt-16 flex w-full items-center gap-y-6 sm:mt-20 sm:gap-y-0">
+          <Carousel 
+               list={PackagesList}
+               md={1}
+               lg={2}
+               xl={3}
+                renderCard={(service) => (
+                <CardPackages
+                    key={service.id}
+                    id={service.id}
+                    featured={service.featured}
+                    title={service.name}
+                    price={service.priceMonthly}
+                    description={service.description}
+                    features={service.features}
+                    link={service.href}
+                />
                 )}
-              >
-                {packages.priceMonthly}
-              </span>
-              <span className={classNames(packages.featured ? 'text-gray-400' : 'text-gray-400', 'text-base')}>/month</span>
-            </p>
-            <p className={classNames(packages.featured ? 'text-gray-300' : 'text-gray-300', 'mt-6 text-base/7')}>
-              {packages.description}
-            </p>
-            <ul
-              role="list"
-              className={classNames(
-                packages.featured ? 'text-gray-300' : 'text-gray-300',
-                'mt-8 space-y-3 text-sm/6 sm:mt-10',
-              )}
-            >
-              {packages.features.map((feature) => (
-                <li key={feature} className="flex gap-x-3">
-                  <CheckIcon
-                    aria-hidden="true"
-                    className={classNames(packages.featured ? 'text-indigo-400' : 'text-indigo-400', 'h-6 w-5 flex-none')}
-                  />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <a
-              href={packages.href}
-              aria-describedby={packages.id}
-              className={classNames(
-                packages.featured
-                  ? 'bg-indigo-500 text-white hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                  : 'bg-white/10 text-white inset-ring inset-ring-white/5 hover:bg-white/20 focus-visible:outline-white/75',
-                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
-              )}
-            >
-              Get started today
-            </a>
-          </div>
-        ))}
+            />
       </div>
     </div>
   )
