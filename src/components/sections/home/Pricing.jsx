@@ -1,13 +1,15 @@
 import PackagesList from '../../mock/PackagesList';
 import Carousel from '../../mock/Carousel';
 import CardPackages from '../../ui/CardPackages';
+import Reveal from '../../animations/Reveal'
+import SplitText from '../../animations/SplitText';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Pricing() {
   return (
-    <div className="relative isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+    <div className="relative isolate  flex flex-col justify-center items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
       <div aria-hidden="true" className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
         <div
           style={{
@@ -19,14 +21,17 @@ export default function Pricing() {
       </div>
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-base/7 font-quicksand font-semibold text-[#1069CE]">Precios</h2>
-        <h2 className="mt-2 text-3xl font-inter font-semibold tracking-tight text-balance text-white sm:text-6xl">
-          Administra  adecuadamente tu negocio   y crece
-        </h2>
+        <SplitText
+            tag='h2'
+            text='Administra adecuadamente tu negocio y crece'
+            className='mt-2 text-3xl font-inter font-semibold tracking-tight text-balance text-white sm:text-6xl'/>
       </div>
-      <p className="mx-auto mt-6 max-w-2xl font-quicksand text-center text-lg font-medium text-gray-400 sm:text-xl/8">
+      <Reveal>
+           <p className="mx-auto mt-6 max-w-2xl font-quicksand text-center text-lg font-medium text-gray-400 sm:text-xl/8">
         Transformá tu gestión contable en una ventaja estratégica con nuestro asesoramiento mensual proactivo, diseñado para anticipar cada uno de tus desafíos fiscales.
       </p>
-      <div className="mx-auto mt-16 flex w-full items-center gap-y-6 sm:mt-20 sm:gap-y-0">
+      </Reveal>
+      <div className="mx-auto mt-16 flex w-full items-center gap-y-6 sm:mt-20">
           <Carousel 
                list={PackagesList}
                md={1}
@@ -46,6 +51,11 @@ export default function Pricing() {
                 )}
             />
       </div>
+      <Reveal>
+           <p className="mx-auto mt-6 max-w-2xl font-quicksand text-center text-sm  text-gray-400 ">
+        *Precios sujetos a evaluación técnica según cada caso. Consultá por WhatsApp para recibir una propuesta personalizada basada en tus requerimientos específicos.
+      </p>
+      </Reveal>
     </div>
   )
 }

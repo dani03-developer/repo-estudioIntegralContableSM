@@ -1,0 +1,30 @@
+import Carousel from '@/components/mock/Carousel';
+import Reveal from '../../animations/Reveal'
+import TestimonialsList from '../../mock/TestimonialsList';
+import CardTestimony from '../../ui/CardTestimony';
+const Testimonials =()=>{
+    return(
+        <div className='flex flex-col items-center justify-center text-center w-full h-[80vh] gap-15  text-[#1e1e1e]'>
+            <Reveal>
+                <div className='text-center text-lg w-40 py-1 font-quicksand md:p-3 border-2 border-[#1e1e1e] rounded-full'>
+                <h2>Testimonios</h2>
+                </div>
+            </Reveal>
+            <Carousel 
+               list={TestimonialsList}
+               md={1}
+               lg={1}
+               xl={1}
+                renderCard={(testimony) => (
+                  <CardTestimony
+                    testimony={testimony.testimony}
+                    img={testimony.img}
+                    namePerson={testimony.name}
+                    profession={testimony.profession}
+                   />
+                )}
+            />
+        </div>
+    );
+}
+export default Testimonials;

@@ -38,7 +38,7 @@ const Carousel =( {renderCard, list, md, lg, xl} )=>{
                 <div className='flex justify-center gap-6'>
                     {visibleCard.map((service, index) => renderCard(service, index))}
                 </div>
-                <div className='flex gap-2 w-full'>
+                <div className='flex gap-2 w-full justify-center items-center'>
                     <Button onClick={previusCard}><IoIosArrowBack /></Button>
                     <Button onClick={nextCard}><IoIosArrowForward /></Button>
                 </div>
