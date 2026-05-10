@@ -15,8 +15,9 @@ const Testimonials =()=>{
                md={1}
                lg={1}
                xl={1}
-                renderCard={(testimony) => (
+                renderCard={(testimony, i) => (
                   <CardTestimony
+                    key ={i}
                     testimony={testimony.testimony}
                     img={testimony.img}
                     namePerson={testimony.name}

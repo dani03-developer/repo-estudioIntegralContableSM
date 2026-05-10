@@ -9,8 +9,8 @@ const Hero = () => {
          className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/mrT3S9Jg/Group-56-(1).png")]'>
             <div className='absolute inset-0 bg-black/20 w-full h-full'></div>
             <Navbar />
-            <section className='grid grid-rows-2 w-full h-fit relative  pb-[5vh] lg:gap-0 mt-[10vh] md:mt-[20vh] md:pb-[10vh] '>
-                <section className='flex  justify-center items-center flex-col text-center gap-7 sm:justify-start lg:text-start lg:items-start lg:pl-[2rem] lg:w-[40%]'>
+            <section className='grid grid-rows-2 w-full h-fit relative  pb-[5vh] lg:gap-0 mt-[10vh] md:mt-[20vh] md:pb-[10vh] md:px-6 xl:px-10 '>
+                <section className='flex  justify-center items-center flex-col text-center gap-7 sm:justify-start lg:text-start lg:items-start lg:w-[40%]'>
                     <h1 className='font-inter font-bold text-2xl sm:text-4xl xl:text-5xl'>ORDENÁ TUS NÚMEROS.<br />CRECE TRANQUILO.</h1>
                     <p className='font-quicksand  px-[2rem] sm:px-[5rem] lg:px-[0rem] xl:text-xl'>Contabilidad clara, trato cercano y acompañamiento real.
                         Porque detrás de cada número hay un proyecto, una familia y un esfuerzo que merece crecer con el respaldo correcto.</p>
@@ -31,7 +31,7 @@ const Hero = () => {
                             </div>
                         </Container>
                     </section>
-                    <section className='flex flex-wrap h-fit align-center px-4 gap-2 order-2 sm:order-1'>
+                    <section className='flex flex-wrap h-fit px-4 align-center gap-2 order-2 sm:order-1 md:px-0'>
                         <Container classNameContainer='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Pymes</Container>
                         <Container classNameContainer='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Empresas Familiares</Container>
                         <Container classNameContainer='flex bg-transparent p-2 w-fit h-fit border-2 rounded-sm border-[#f7f4ee] font-quicksand'>Monotributista</Container>
