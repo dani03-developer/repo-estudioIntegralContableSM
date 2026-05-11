@@ -6,7 +6,7 @@ const Hero = () => {
 
     return (
         <div
-         className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/mrT3S9Jg/Group-56-(1).png")]'>
+         className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/QCc7jv4t/Backgrond-Inicio.png")]'>
             <div className='absolute inset-0 bg-black/20 w-full h-full'></div>
             <Navbar />
             <section className='grid grid-rows-2 w-full h-fit relative  pb-[5vh] lg:gap-0 mt-[10vh] md:mt-[20vh] md:pb-[10vh] md:px-6 xl:px-10 '>

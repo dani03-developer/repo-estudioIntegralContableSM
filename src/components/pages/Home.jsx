@@ -8,6 +8,7 @@ import Testimonials from '../sections/home/Testimonials';
 import Fqa from '../sections/home/Fqa';
 import Footer from '../layout/Footer';
 import Whatsapp from '../layout/Whatsapp';
+import Contact from '../sections/home/Contact'
 
 const Home =()=>{
     return(
@@ -20,6 +21,7 @@ const Home =()=>{
             <Services/>
             <Pricing/>
             <Testimonials/>
+            <Contact/>
             <Fqa/>
             <Footer/>
         </Container>
