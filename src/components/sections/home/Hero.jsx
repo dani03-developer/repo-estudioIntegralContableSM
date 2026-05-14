@@ -1,4 +1,4 @@
-import Navbar from '../../layout/Navbar';
+
 import { AvatarGroupDemo } from '../../ui/AvatarGroupDemo';
 import Container from '../../ui/Container';
 import { BsCalendarEvent,  BsArrowRightSquareFill } from "react-icons/bs";
@@ -8,9 +8,8 @@ const Hero = () => {
         <div
          className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/QCc7jv4t/Backgrond-Inicio.png")]'>
             <div className='absolute inset-0 bg-black/20 w-full h-full'></div>
-            <Navbar />
             <section className='grid grid-rows-2 w-full h-fit relative  pb-[5vh] lg:gap-0 mt-[10vh] md:mt-[20vh] md:pb-[10vh] md:px-6 xl:px-10 '>
-                <section className='flex  justify-center items-center flex-col text-center gap-7 sm:justify-start lg:text-start lg:items-start lg:w-[40%]'>
+                <section className='flex  justify-center items-center pt-20 flex-col text-center gap-7 sm:justify-start lg:text-start lg:items-start lg:w-[40%]'>
                     <h1 className='font-inter font-bold text-2xl sm:text-4xl xl:text-5xl'>ORDENÁ TUS NÚMEROS.<br />CRECE TRANQUILO.</h1>
                     <p className='font-quicksand  px-[2rem] sm:px-[5rem] lg:px-[0rem] xl:text-xl'>Contabilidad clara, trato cercano y acompañamiento real.
                         Porque detrás de cada número hay un proyecto, una familia y un esfuerzo que merece crecer con el respaldo correcto.</p>

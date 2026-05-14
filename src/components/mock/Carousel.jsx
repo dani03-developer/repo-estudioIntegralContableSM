@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward,  IoIosArrowBack } from "react-icons/io";
-import { Button, buttonVariants } from "../ui/Button";
+import { Button } from "../ui/Button";
 const Carousel =( {renderCard, list, md, lg, xl} )=>{
     const [actualScreen, setScreen ] = useState(1); //aquí viene la actualización
     const [actualCard, setCard] = useState(0);

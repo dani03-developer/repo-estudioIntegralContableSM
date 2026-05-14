@@ -1,7 +1,7 @@
-const Navigation = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Servicios', href: '#' },
-  { name: 'Nosotros', href: '#' },
-  { name: 'Contacto', href: '#' },
-];
-export default Navigation;
+const Navegation = [
+  { name: 'Inicio', href: '/'},
+  { name: 'Servicios', href: '/servicios' },
+  { name: 'Nosotros', href: '/nosotros' },
+  { name: 'Contacto', href: '/contacto' },
+]
+export default Navegation;

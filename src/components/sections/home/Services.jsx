@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Reveal from "../../animations/Reveal";
 import SplitText from "../../animations/SplitText";
 import Carousel from "../../mock/Carousel";

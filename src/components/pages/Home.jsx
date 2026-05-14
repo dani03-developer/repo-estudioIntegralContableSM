@@ -6,14 +6,13 @@ import Services from '../sections/home/Services';
 import Pricing from '../sections/home/Pricing';
 import Testimonials from '../sections/home/Testimonials';
 import Fqa from '../sections/home/Fqa';
-import Footer from '../layout/Footer';
 import Whatsapp from '../layout/Whatsapp';
 import Contact from '../sections/home/Contact'
 
 const Home =()=>{
     return(
         <>
-        <Container classNameContainer='relative bg-[#f7f4ee] h-full flex flex-col gap-20' >
+        <Container classNameContainer='relative h-full flex flex-col gap-20' >
             <Whatsapp/>
             <Hero />
             <PainPoint />
@@ -23,7 +22,6 @@ const Home =()=>{
             <Testimonials/>
             <Contact/>
             <Fqa/>
-            <Footer/>
         </Container>
         </>
     );

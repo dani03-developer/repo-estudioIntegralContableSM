@@ -5,12 +5,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const CardPackages =( {id, featured, title, price, description, link, features} )=>{
+const CardPackages =( {id, featured, title, price, description, link, features, forceblue = false} )=>{
     return(
         <div
             key={id}
             className={classNames(
-              featured ? 'relative bg-gray-800' : 'bg-white/2.5 sm:mx-8 lg:mx-0',
+              forceblue || featured ? 'relative bg-gray-800' : 'bg-white/2.5 sm:mx-8 lg:mx-0',
               featured
                 ? ''
                 : id === 0
