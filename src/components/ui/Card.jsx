@@ -1,4 +1,4 @@
-import {Button, buttonVariants} from '../ui/Button';
+import {Button} from '../ui/Button';
 
 const Card =( {icon, title, description, className='', classBtn=''} )=>{
   return(

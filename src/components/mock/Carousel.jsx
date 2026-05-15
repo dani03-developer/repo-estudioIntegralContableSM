@@ -34,7 +34,7 @@ const Carousel =( {renderCard, list, md, lg, xl} )=>{
     }
     const visibleCard=list.slice(actualCard, actualCard+actualScreen);
     return(
-        <div className='flex flex-col justify-center items-center w-full gap-8'>
+        <div className='flex flex-col justify-center items-center w-full gap-15'>
                 <div className='flex justify-center gap-6'>
                     {visibleCard.map((service, index) => renderCard(service, index))}
                 </div>

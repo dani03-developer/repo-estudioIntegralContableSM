@@ -1,7 +1,7 @@
 import Carousel from '@/components/mock/Carousel';
-import Reveal from '../../animations/Reveal'
-import TestimonialsList from '../../mock/TestimonialsList';
-import CardTestimony from '../../ui/CardTestimony';
+import Reveal from '../animations/Reveal'
+import TestimonialsList from '../mock/TestimonialsList';
+import CardTestimony from './CardTestimony';
 const Testimonials =()=>{
     return(
         <div className='flex flex-col items-center justify-center text-center w-full h-[80vh] gap-15  text-[#1e1e1e]'>
