@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import Reveal from "./Reveal";
 const BubblesDialog = ( { showMobile = false } ) => {
   const mensages =[
     {
