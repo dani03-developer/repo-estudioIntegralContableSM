@@ -11,14 +11,14 @@ const FormSection = () => {
             <div className='flex flex-col gap-6 font-quicksand text-start w-full md:w-1/2'>
                 <p className='font-bold text-[#A6A6A6]'>ESTAMOS AQUÍ PARA AYUDARTE</p>
                 <h2 className='font-bold font-inter text-2xl'>INFO. CONTACTO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit augue, natoque aenean feugiat maecenas nulla rutrum eu ad suscipit</p>
+                <p>Completá el formulario y nos llegará tu mensaje al instante. Te respondemos a la brevedad. Si preferís, también podés escribirnos por WhatsApp o nuestras redes sociales.</p>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
                     <div className='p-2 rounded-md bg-[#1A3E65] text-[#f4f7ee] text-2xl '>
                         <IoMailOutline />
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>E-mail</p>
-                        <p className='font-semibold'>estudioIntegralsmachaca@gmail.com</p>
+                        <p className='font-semibold'>estudiointegral.smachaca@gmail.com</p>
                     </div>
                 </BasicCard>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
@@ -36,7 +36,7 @@ const FormSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>Teléfono</p>
-                        <p className='font-semibold'>+54 9 1654849</p>
+                        <p className='font-semibold'>+54 9 351 621-0162</p>
                     </div>
                 </BasicCard>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
@@ -45,7 +45,7 @@ const FormSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>Horarios</p>
-                        <p className='font-semibold'>Lun-Vie 9:00 a 18:00</p>
+                        <p className='font-semibold'>Lun-Vie 9:00 a 20:00</p>
                     </div>
                 </BasicCard>
                 <div className='flex flex-row gap-2 items-center h-10'>

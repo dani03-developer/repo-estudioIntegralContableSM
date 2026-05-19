@@ -10,13 +10,13 @@ const CardPackages =( {id, featured, title, price, description, link, features, 
         <div
             key={id}
             className={classNames(
-              forceblue || featured ? 'relative bg-gray-800' : 'bg-white/2.5 sm:mx-8 lg:mx-0',
+              forceblue || featured ? 'relative bg-gray-800 flex-1' : 'bg-white/2.5 sm:mx-8 lg:mx-0 flex-1',
               featured
                 ? ''
                 : id === 0
-                  ? 'rounded-t-3xl  lg:rounded-bl-3xl'
-                  : 'rounded-tr-3xl',
-              'rounded-3xl p-8 ring-1 ring-white/10 sm:p-10',
+                  ? 'rounded-t-3xl  lg:rounded-bl-3xl flex-1'
+                  : 'rounded-tr-3xl flex-1',
+              'rounded-3xl p-8 ring-1 ring-white/10 sm:p-10 flex-1',
             )}
           >
                 <h3

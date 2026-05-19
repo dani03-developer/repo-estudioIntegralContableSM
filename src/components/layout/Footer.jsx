@@ -6,7 +6,7 @@ import {NavLink, useLocation} from 'react-router-dom';
 const Footer = () => {
     const { pathname } = useLocation()
   return (
-    <div className='pt-28 sm:pt-40 '>
+    <div className={pathname === '/' ? 'pt-28 sm:pt-40 ' : 'pt-10'}>
 
          <footer className=' relative border-t bg-[#1e1e1e] text-[#f4f7ee] font-inter items-end justify-end'>
           {pathname === '/' && (
@@ -18,7 +18,7 @@ const Footer = () => {
             )
          }
         <section 
-          className={pathname === '/' ? 'mx-auto pt-15 pb-10  px- md:px-5 sm:pt-35 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8':'p-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8'}>
+          className={pathname === '/' ? 'mx-auto pt-15 pb-10  px-6 md:px-5 sm:pt-35 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8':'p-10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8'}>
         <section>
           <NavLink to='/'>
             <img src='https://i.postimg.cc/fTsRDYSb/Group-33.png' className='h-10 md:h-12 xl:h-13' alt='SM' />

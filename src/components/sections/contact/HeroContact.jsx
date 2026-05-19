@@ -19,8 +19,8 @@ const HeroContact = () => {
                     highlightClass='text-[#25476d] bg-[#c8d9e6] px-2'
                     className='font-inter font-bold text-3xl sm:text-4xl lg:text-6xl'
                 />
-                <p className='font-quicksand  px-[2rem] sm:px-[5rem] lg:px-[0rem] xl:text-xl'>Contabilidad clara, trato cercano y acompañamiento real.
-                Porque detrás de cada número hay un proyecto, una familia y un esfuerzo que merece crecer con el respaldo correcto.</p>
+                <p className='font-quicksand  px-[2rem] sm:px-[5rem] lg:px-[0rem] xl:text-xl'>Respondemos cada consulta con la atención que tu situación merece. 
+                Escribinos y te contactamos a la brevedad.</p>
                 <AvatarGroupDemo className='pt-4'/>
                 <div className='flex flex-col md:flex-row gap-4'>
                     <Button className='bg-[#25476D] hover:bg-[#1a3a5a]'>Contáctate con Nosotros</Button>
@@ -49,7 +49,7 @@ const HeroContact = () => {
                         delay: 0.2,
                         }}
                         >
-                        <p>Hola! En que te ayudamos? 👩‍💻</p>
+                        <p>Siento que mis números no cierran 😟</p>
                         </motion.div>
                     </div>
                 </div>

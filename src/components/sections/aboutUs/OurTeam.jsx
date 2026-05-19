@@ -18,18 +18,18 @@ const OurTeam =()=>{
             />
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
                 {OurTeamList.map((member, index) => (
-                    <div key={index} className='flex relative flex-col w-70 items-center text-start gap-4 rounded-lg'>
+                    <div key={index} className='flex relative flex-col w-70 items-center text-start gap-4 rounded-lg md:w-60 lg:w-70'>
                         <img src={member.photo} alt={member.name} className='object-cover' />
-                        <div className='absolute flex flex-col items-start p-10 place-content-between h-full p-4 rounded-lg w-full'>
+                        <div className='absolute flex flex-col items-start p-10 place-content-between h-full md:p-7 lg:p-10 rounded-lg w-full'>
                             <div className='flex flex-col text-[#f4f7ee]'>
-                                <p className='text-xl font-bold font-inter'>{member.name}</p>
-                                <p className='font-quicksand'>{member.role}</p>
+                                <p className='text-xl font-bold font-inter md:text-md lg:text-xl'>{member.name}</p>
+                                <p className='font-quicksand md:text-sm lg:text-base'>{member.role}</p>
                             </div>
                             <div className='flex gap-2 mt-2 justify-center text-[#25476D]'>
-                                <Link to={member.linkedIn} target="_blank" rel="noopener noreferrer">
+                                <Link to={member.linkedIn} target="_blank">
                                     <FaLinkedin className='text-3xl' />
                                 </Link>
-                                <Link to={member.instagram} target="_blank" rel="noopener noreferrer">
+                                <Link to={member.instagram} target="_blank">
                                     <FaInstagram className='text-3xl' />
                                 </Link>
                             </div>

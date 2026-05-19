@@ -23,14 +23,19 @@ const Carousel =( {renderCard, list, md, lg, xl} )=>{
         
     }, []);
     const nextCard=()=>{
-        if((actualCard+actualScreen)< (list.length)){
-            setCard(actualCard+actualScreen);
-        }
+        const siguiente = actualCard + actualScreen
+        if (siguiente < list.length) {
+        const nuevoIndice = Math.min(siguiente, list.length - actualScreen)
+        setCard(nuevoIndice)
+    }
     };
     const previusCard=()=>{
-        if((actualCard-actualScreen)>=0){
-            setCard(actualCard-actualScreen);
-        }
+        const anterior = actualCard - actualScreen
+    if (anterior >= 0) {
+        setCard(anterior)
+    } else {
+        setCard(0)
+    }
     }
     const visibleCard=list.slice(actualCard, actualCard+actualScreen);
     return(
