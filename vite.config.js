@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/repo-estudioIntegralContableSM/', // ← cambiá esto por el nombre exacto de tu repo
+  base: '/repo-estudioIntegralContableSM/', 
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
