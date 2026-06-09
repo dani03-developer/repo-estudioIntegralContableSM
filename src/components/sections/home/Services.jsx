@@ -1,8 +1,8 @@
 import Reveal from "../../animations/Reveal";
 import SplitText from "../../animations/SplitText";
-import Carousel from "../../mock/Carousel";
+import Carousel from "../../../mock/Carousel";
 import Card from '../../ui/Card';
-import ServicesList from '../../mock/ServicesList';
+import ServicesList from '../../../mock/ServicesList';
 const Services =()=>{
     return(
         <section className='flex flex-col justify-center items-center text-center p-3 gap-5 md:justify-start md:items-start xl:mx-15'> 
@@ -28,6 +28,7 @@ const Services =()=>{
                 renderCard={(service, index) => (
                 <Card
                     key={index}
+                    id={service.id}
                     icon={service.icon}
                     title={service.nameService}
                     description={service.description}

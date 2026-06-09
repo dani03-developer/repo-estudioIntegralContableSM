@@ -18,7 +18,7 @@ const FormSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>E-mail</p>
-                        <p className='font-semibold'>estudiointegral.smachaca@gmail.com</p>
+                        <p className='font-semibold text-sm'>estudiointegral.smachaca@gmail.com</p>
                     </div>
                 </BasicCard>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
@@ -27,7 +27,7 @@ const FormSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>Ubicación</p>
-                        <p className='font-semibold'>Agenda una cita presencial, o virtual.</p>
+                        <p className='font-semibold text-sm'>Agenda una cita presencial, o virtual.</p>
                     </div>
                 </BasicCard>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
@@ -36,16 +36,16 @@ const FormSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-semibold text-[#A6A6A6]'>Teléfono</p>
-                        <p className='font-semibold'>+54 9 351 621-0162</p>
+                        <p className='font-semibold text-sm'>+54 9 351 621-0162</p>
                     </div>
                 </BasicCard>
                 <BasicCard className='flex-row px-3 py-3 gap-2'>
                     <div className='p-2 rounded-md bg-[#1A3E65] text-[#f4f7ee] text-2xl '>
                         <TbClock />
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col'>  
                         <p className='font-semibold text-[#A6A6A6]'>Horarios</p>
-                        <p className='font-semibold'>Lun-Vie 9:00 a 20:00</p>
+                        <p className='font-semibold text-sm'>Lun-Vie 9:00 a 20:00</p>
                     </div>
                 </BasicCard>
                 <div className='flex flex-row gap-2 items-center h-10'>

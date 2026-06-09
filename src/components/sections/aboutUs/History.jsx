@@ -1,6 +1,6 @@
-import HistoryList from '../../mock/HistoryList';
+import HistoryList from '../../../mock/HistoryList';
 import BasicCard from '../../ui/BasicCard';
-import Carousel from '../../mock/Carousel';
+import Carousel from '../../../mock/Carousel';
 import Reveal from '../../animations/Reveal';
 import SplitText from '../../animations/SplitText';
 const History =()=>{

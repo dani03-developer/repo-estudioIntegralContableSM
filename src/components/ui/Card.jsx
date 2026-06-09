@@ -1,6 +1,7 @@
 import {Button} from '../ui/Button';
 import CirculeIcon from './CirculeIcon';
-const Card =( {icon, title, description, className='', classBtn=''} )=>{
+import { Link } from 'react-router-dom';
+const Card =( {id, icon, title, description, className='', classBtn=''} )=>{
   return(
     <div className={`flex flex-col flex-1  gap-4 border rounded-lg p-6 justify-center items-start md:justify-start w-fit ${className}`}>
       <CirculeIcon icon={icon} className='bg-[#25476D] text-[#f4f7ee]'/>
@@ -9,6 +10,9 @@ const Card =( {icon, title, description, className='', classBtn=''} )=>{
         <p>{description}</p>
       </div>
       <Button className={`w-fit ${classBtn} hover:text-white`}>Agregar al Carrito</Button>
+      <Link to={`/servicio/${id}`}>
+        <Button className={`w-fit ${classBtn} hover:text-white`}>Ver Detalles</Button>
+      </Link>
     </div>
   )
 }

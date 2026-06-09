@@ -1,6 +1,6 @@
-import Carousel from '@/components/mock/Carousel';
+import Carousel from '@/mock/Carousel';
 import Reveal from '../animations/Reveal'
-import TestimonialsList from '../mock/TestimonialsList';
+import TestimonialsList from '../../mock/TestimonialsList';
 import CardTestimony from './CardTestimony';
 const Testimonials =()=>{
     return(

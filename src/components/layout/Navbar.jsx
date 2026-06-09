@@ -1,8 +1,8 @@
 import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { BsCart2 } from "react-icons/bs";
 import {NavLink, useLocation} from 'react-router-dom';
-import Navegation from '../mock/Navegation';
+import Navegation from '../../mock/Navegation';
+import CartWidget from './CartWidget';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -63,7 +63,7 @@ export default function Navbar() {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Ver Carrito</span>
-              <BsCart2 className='size-6 lg:size-8'/>
+              <CartWidget />
             </button>
           </div>
         </div>

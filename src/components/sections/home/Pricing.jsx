@@ -1,5 +1,5 @@
-import PackagesList from '../../mock/PackagesList';
-import Carousel from '../../mock/Carousel';
+import PackagesList from '../../../mock/PackagesList';
+import Carousel from '../../../mock/Carousel';
 import CardPackages from '../../ui/CardPackages';
 import Reveal from '../../animations/Reveal'
 import SplitText from '../../animations/SplitText';

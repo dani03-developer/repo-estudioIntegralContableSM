@@ -1,6 +1,6 @@
 import Reveal from "../../animations/Reveal";
 import SplitText from "../../animations/SplitText";
-import OurTeamList from "../../mock/OurTeamList";
+import OurTeamList from "../../../mock/OurTeamList";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 const OurTeam =()=>{
@@ -22,8 +22,9 @@ const OurTeam =()=>{
                         <img src={member.photo} alt={member.name} className='object-cover' />
                         <div className='absolute flex flex-col items-start p-10 place-content-between h-full md:p-7 lg:p-10 rounded-lg w-full'>
                             <div className='flex flex-col text-[#f4f7ee]'>
-                                <p className='text-xl font-bold font-inter md:text-md lg:text-xl'>{member.name}</p>
-                                <p className='font-quicksand md:text-sm lg:text-base'>{member.role}</p>
+                                <p className='text-xl font-bold font-inter md:text-md lg:text-xl xl:text-2xl'>{member.name}</p>
+                                <p className='font-quicksand md:text-sm lg:text-base'>{member.esp}</p>
+                                <p className='font-quicksand font-bold md:text-sm lg:text-base'>{member.mat}</p>
                             </div>
                             <div className='flex gap-2 mt-2 justify-center text-[#25476D]'>
                                 <Link to={member.linkedIn} target="_blank">

@@ -1,6 +1,6 @@
 // src/components/layout/Footer.jsx
 import { BsInstagram } from 'react-icons/bs';
-import Navegation from '../mock/Navegation';
+import Navegation from '../../mock/Navegation';
 import { Button } from '../ui/Button';
 import {NavLink, useLocation} from 'react-router-dom';
 const Footer = () => {

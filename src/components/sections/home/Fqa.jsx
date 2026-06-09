@@ -1,6 +1,6 @@
 import Reveal from '../../animations/Reveal';
 import { BasicAccordion } from '@/components/ui/BasicAccordion';
-import FqaList from '../../mock/FqaList';
+import FqaList from '../../../mock/FqaList';
 const Fqa =()=>{
     return(
         <div className='flex flex-col justify-center items-center gap-10 text-[#1e1e1e]'>

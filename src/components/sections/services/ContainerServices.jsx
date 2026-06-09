@@ -1,7 +1,7 @@
 import CardPackages from '../../ui/CardPackages';
-import PackagesList from '../../mock/PackagesList';
+import PackagesList from '../../../mock/PackagesList';
 import GridService from './GridService';
-import ServicesList from '../../mock/ServicesList';
+import ServicesList from '../../../mock/ServicesList';
 import Card from '../../ui/Card';
 const MonthService =()=>{
     return(
@@ -36,6 +36,7 @@ const MonthService =()=>{
                 card={(service, index) => (
                     <Card
                     key={index}
+                    id={service.id}
                     icon={service.icon}
                     title={service.nameService}
                     description={service.description}
