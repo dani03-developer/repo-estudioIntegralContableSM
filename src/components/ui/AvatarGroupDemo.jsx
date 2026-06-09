@@ -17,9 +17,9 @@ const AVATARS = [
     tooltip: 'Silvia Machaca',
   },
   {
-    src: 'https://pbs.twimg.com/profile_images/1677042510839857154/Kq4tpySA_400x400.jpg',
-    fallback: 'AW',
-    tooltip: 'Adam Wathan',
+    src: 'https://i.postimg.cc/SKQRJgNP/avatar-virginia.png',
+    fallback: 'VO',
+    tooltip: 'Virginia Ontiveros',
   },
   {
     src: 'https://pbs.twimg.com/profile_images/1927474594102784000/Al0g-I6o_400x400.jpg',

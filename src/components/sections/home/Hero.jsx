@@ -1,9 +1,8 @@
-
 import { AvatarGroupDemo } from '../../ui/AvatarGroupDemo';
 import Container from '../../ui/Container';
 import { BsCalendarEvent,  BsArrowRightSquareFill } from "react-icons/bs";
+import scrollToId from '../../animations/ScrollToId';
 const Hero = () => {
-
     return (
         <div
          className='relative min-h-screen text-[#f7f4ee] bg-cover bg-center sm:bg-[position:unset] bg-[url("https://i.postimg.cc/QCc7jv4t/Backgrond-Inicio.png")]'>
@@ -26,7 +25,7 @@ const Hero = () => {
                                     <p>30 min de sesión</p>
                                     <p className='font-bold'>Reserva tu llamada</p>
                                 </div>
-                                <BsArrowRightSquareFill className='text-2xl sm:text-4xl' />
+                                <BsArrowRightSquareFill className='text-2xl sm:text-4xl cursor-pointer' onClick={() => scrollToId('agenda')}/>
                             </div>
                         </Container>
                     </section>

@@ -6,7 +6,7 @@ const CartContainer = () => {
     const { cart } = useContext(CartContext);
     return(
         <>
-        {cart.length === 0 ? <EmptyCart /> : <CartView />}
+        {!cart.length ? <EmptyCart /> : <CartView />}
         </>
     );
 };

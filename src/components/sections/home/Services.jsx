@@ -32,6 +32,7 @@ const Services =()=>{
                     icon={service.icon}
                     title={service.nameService}
                     description={service.description}
+                    price={service.price}
                     className={index % 2 !== 0 ? 'bg-[#25476D] text-[#f7f4ee]' : 'bg-[#E5E2E2]'}
                     classBtn={index % 2 !==0 ? 'bg-[#95B2C6]/58 text-[#f7f4ee] hover:bg-[#4A7C9E]':'bg-[#95B2C6]/58 text-[#25476D] hover:bg-[#25476D]'}
                 />

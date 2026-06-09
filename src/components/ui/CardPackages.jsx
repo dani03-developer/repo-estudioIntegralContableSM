@@ -1,6 +1,6 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { Button } from './Button';
-
+import { Link } from 'react-router-dom';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -59,7 +59,7 @@ const CardPackages =( {id, featured, title, price, description, link, features, 
             <a
               href={link}
             >
-              <Button className='mt-8 bg-[#4A7C9E]/58 text-[#f7f4ee] hover:bg-[#4A7C9E]'>Agendar Cita</Button>
+              <Link to='/contacto'><Button className='mt-8 bg-[#4A7C9E]/58 text-[#f7f4ee] hover:bg-[#4A7C9E]'>Agendar Cita</Button></Link>
             </a>
           </div>
     );

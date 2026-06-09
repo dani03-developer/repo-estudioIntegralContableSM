@@ -3,7 +3,7 @@ import Reveal from '../../animations/Reveal';
 import SplitText from '../../animations/SplitText';
 const Contact =()=>{
     return(
-        <div className="relative isolate text-[#f7f4ee] text-center flex flex-col justify-center items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8 gap-10">
+        <div id="agenda" className="relative isolate text-[#f7f4ee] text-center flex flex-col justify-center items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8 gap-10">
       <div aria-hidden="true" className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
         <div
           style={{

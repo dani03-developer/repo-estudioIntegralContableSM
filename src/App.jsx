@@ -11,10 +11,12 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/pages/CartContainer';
 import Error from './components/pages/Error';
+import ScrollToTop from './components/animations/ScrollToTop'
 function App() {
 
   return (
     <BrowserRouter basename="/repo-estudioIntegralContableSM/">
+      <ScrollToTop/>
       <SmoothScroll>
       <CartProvider>
       <Navbar />

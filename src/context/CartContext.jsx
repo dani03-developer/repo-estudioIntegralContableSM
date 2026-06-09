@@ -37,7 +37,7 @@ export const CartProvider =( {children} )=>{
     }
     //total a pagar  
      const totalPrice = () => {
-        return cart.reduce((acc, service)=> acc + service.quantity * service.price)
+        return cart.reduce((acc, service)=> acc + service.quantity * service.price, 0)
      }
     // total de items
     const totalItems = () => {
